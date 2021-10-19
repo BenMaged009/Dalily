@@ -1,0 +1,55 @@
+ {% extends "base.html"%} {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='page1.css') }}">
+<section id="page">
+    <div class="page ">
+        <div class="title">
+            <h1>عنوان <span>المحتوى</span></h1>
+        </div>
+        <div class="brief">
+            <h2>مقدمة</h2>
+            <p>في هذا المحتوى سيتم التعرف على الخطوات والاجراءات والاورتق المطلوبة والخ ظ ظ ظ</p>
+        </div>
+        <div class="con-item">
+            <div class="req">
+                <h2>المتطلبات</h2>
+                <p>hg fhfgui okdmjoem naooooojn o</p>
+                <ul>
+                    <li>متطلب 1</li>
+                    <li>متطلب 1</li>
+                    <li>متطلب 1</li>
+                    <li>متطلب 1</li>
+                    <li>متطلب 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con-item">
+            <div class="steps">
+                <h2>الاجرائات</h2>
+                <ul>
+                    <li>اجراء 1</li>
+                    <li>اجراء 1</li>
+                    <li>اجراء 1</li>
+                    <li>اجراء 1</li>
+                    <li>اجراء 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="con-item">
+            <div class="location">
+                <h2>موقع المكان</h2>
+                <div class="map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer">
+    <div class="footer">
+        <div class="con">
+            <h1>Hello</h1>
+        </div>
+    </div>
+
+</section>
+<script src=" {{ url_for( 'static', filename='app.js' ) }} "></script>
+{% endblock %}

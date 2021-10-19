@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Cairo;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+    color: blue;
+}
+
+p {
+    font-size: 17px;
+    letter-spacing: normal;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#header .header {
+    height: 60px;
+}
+
+#header .header h1 {
+    font-size: 40px;
+}
+
+#page {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+#page .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#page .title {
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    margin: 30px 20px 10px 20px;
+}
+
+#page .title h1 {
+    color: black;
+    font-size: 25px;
+}
+
+#page .title h1 span {
+    color: red;
+}
+
+#page .con-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    padding: 80px;
+    margin: 20px auto;
+    background-color: #f3f3f3;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+#page .brief {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 10px;
+}
+
+#page .req {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#footer {
+    max-height: 100px;
+}
+
+#footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}

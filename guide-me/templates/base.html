@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> {% block extra_head %}{% endblock %}
+    <title>دليلي</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="header container">
+            <div id="nav-bar" class="nav-bar">
+                <div class="logo">
+                    <a href="/">
+                        <h1>دليلي</h1>
+                    </a>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <div id="closebtn" onclick="closeNav()">
+                        <div id="barside1" class="barside"></div>
+                        <div id="barside2" class="barside"></div>
+                        <div id="barside3" class="barside"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc()" class="dropbtn">الاقامات</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc2()" class="dropbtn">للزائر لاول مره</button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc3()" class="dropbtn">مفقودات</button>
+                        <div id="myDropdown3" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc4()" class="dropbtn">كيف اصل؟</button>
+                        <div id="myDropdown4" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc5()" class="dropbtn">اجراءات قانونية</button>
+                        <div id="myDropdown5" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button onclick="dropfunc6()" class="dropbtn">معلومات عامه</button>
+                        <div id="myDropdown6" class="dropdown-content">
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                            <a href="#">القائمة</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu" onclick="openNav()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <ul id="mylinks" class="nav-links">
+                    <li><a href="/">الصفحه الرئيسية</a></li>
+                    <li><a href="#">القائمة</a></li>
+                    <li><a href="#content">محتوى الصفحه</a></li>
+                    <li><a href="#footer">تواصل معنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    {% block content %} {% endblock %}
+    <section id="footer">
+        <div class="footer">
+            <div class="footer-top">
+                <h2>دليلي</h2>
+            </div>
+            <div class="footer-bottom">
+                <p>All rights reserved @2021</p>
+            </div>
+        </div>
+    </section>
+    <script src=" {{ url_for( 'static', filename='app.js' ) }} "></script>
+</body>
+
+</html>
